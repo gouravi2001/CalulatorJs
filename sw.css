@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/Cosmo_Melody.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+  background-attachment: fixed;
+}
+.main-btn{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.main-btn .btn{
+	margin: 10px;
+	height: 60px !important;
+	width:200px !important;
+	background-color:transparent !important;
+  box-shadow: 0px 0px 12px aqua;
+	 border:5px solid aqua;
+	 border-radius: 10px !important;
+	 transition: 0.6s ease;
+   color:aqua;
+   /* text-shadow:0 0 10px aqua; */
+   font-weight: bolder;
+}
+.main-btn .btn:hover{
+	border-radius: 50px !important;
+	background: aqua !important;
+	outline: none !important;
+	border: none !important;
+	color:#000 !important;
+}
+
+.main-btn .btn:focus{
+	box-shadow: none !important;
+	border: 1px solid #fff !important;
+}
+.timbre{
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 3em;
+  color:#fff;
+  text-shadow:0 0 15px #ff005b;
+}
+.main-btn a{
+	color:#fff;
+}
+.main-btn a:hover{
+	text-decoration: none;
+	color:#000;
+}
+.main-btn .btn:hover a{
+	color:#000;
+}
+
+
+
+
+#saragini{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(images/Swaragini_1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align:center;
+  color:#fff;
+  padding-top: 200px;
+}
+.saragini h2{
+  padding-bottom: 25px;
+}
+.saragini p{
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#open-stage{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(images/b8.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align:center;
+  color:#fff;
+  padding-top: 100px;
+}
+#autum-dawn{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(images/b14.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align:center;
+  color:#fff;
+  padding-top: 50px;
+}
+
+.navbar{
+  background-color: rgba(0,0,0,0.4);
+	font-size:16px !important;
+	font-weight: bold;
+	z-index: 0 !important;
+}
+.navbar-brand img{
+  height:50px;
+  float:left !important;
+}
+.nav-bar .fa-bars{
+  font-size: 30px;
+  color:aqua;
+}
+.navbar-toggler{
+  outline: none !important;
+}
+.navbar-nav{
+  float:right;
+  text-align: right;
+}
+.nav-link{
+  color:aqua;
+}
+.nav-link:hover{
+	border-radius: 50px !important;
+  background-color:aqua;
+  color:#000;
+  text-align: center !important;
+  transition: 1s;
+  padding:5px;
+}
+.nav-item{
+	 margin-right: 10px !important;
+}
+.icons{
+  position: fixed;
+  top:40%;
+  justify-content: center;
+  left:0%;
+  width:250px;
+  display:flex;
+  flex-direction: column;
+}
+.icons a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:10px;
+  font-size: 22px;
+  font-family: sans-serif;
+  margin:2px;
+  text-align: right;
+  border:2px solid black;
+  color:#000;
+  background-color: #f5e5e5;
+  font-weight: 600;
+  border-radius: 0px 50px 50px 0px;
+  transform: translate(-185px,0px);
+  transition:all 1s;
+}
+.icons a:hover{
+  transform: translate(-30px,0px);
+}
+.icons a i{
+margin-left: 25px;
+/*background-color: white;*/
+height:44px;
+width:40px;
+color:grey;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+transition:all 1s;
+}
+.icons a:hover i{
+  transform: rotate(360deg);
+}
+.icons a i.fa-facebook-f{
+  background-color:  #3b5998;
+  color:white;
+}
+.icons a i.fa-instagram{
+  background-color:  #fb3958 ;
+  color:white;
+}
+.icons a i.fa-twitter{
+  background-color:  #1da1f2;
+  color:white;
+}
+.footer{
+  background-color: #222222;
+  height: 90px;
+}
+.footer h5{
+  text-align: center;
+  color:aqua;
+  text-shadow: 0 0 10px aqua;
+  padding-top: 25px;
+}
+.icons1{
+  visibility: hidden;
+}
+@media (max-width: 585px) {
+  .icons{
+    visibility: hidden;
+  }
+  .icons1{
+    visibility: visible !important;
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    font-size: 24px !important;
+    padding-top: 20px;
+  }
+  .icons1 .fa{
+    margin-right: 30px;
+  }
+  .icons1 a i{
+    height:44px;
+    width:40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 1s;
+  }
+
+  .icons1 a i.fa-facebook-f{
+    background-color:  #3b5998;
+    color:white;
+  }
+  .icons1 a i.fa-instagram{
+    background-color:  #fb3958 ;
+    color:white;
+  }
+  .icons1 a i.fa-twitter{
+    background-color:  #1da1f2;
+    color:white;
+  }
+  .icons1 i:hover{
+    transform: rotate(360deg) !important;
+  }
+  #saragini{
+    padding-top:50px !important;
+  }
+
+}
+@media (min-width: 586px) and (max-width: 767.98px) {
+  #saragini{
+    padding-top: 60px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #saragini{
+    padding-top: 120px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
